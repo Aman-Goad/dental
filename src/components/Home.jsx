@@ -33,7 +33,7 @@ const Home = () => {
 
 
         {/* Contact Info  BOX */}
-        <div className='absolute  w-full bg-transparent borde bottom-[-15%]'>
+        <div className='absolute  w-full bg-transparent  bottom-[-15%]'>
           <div className='h-full max-w-screen-lg mx-auto bg-textwhite rounded-lg shadow-lg flex p-3 gap-1 '>
             {/* Email */}
             <div className="box border-r border-black  w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
