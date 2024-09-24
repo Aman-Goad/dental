@@ -54,7 +54,7 @@ const Home = () => {
             </div>
 
             {/* Address */}
-            <div className="box border-r border-black  w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
+            <div className="box   w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
               <div className='bg-bgblue rounded-md inline-flex p-2  '>
                 <img src="/svg/l.svg" alt="" className='w-5 h-5 text-textwhite' />
               </div>
@@ -69,8 +69,8 @@ const Home = () => {
               <div className='bg-textwhite rounded-md inline-flex p-2  '>
                 <img src="/svg/calender.svg" alt="" className='w-5 h-5 text-textwhite' />
               </div>
-              <h1 className='font-bold text-[1.4vw]'>Book Appointment</h1>
-              <Link to='/book-appointment' className='border-b text-[0.9vw] border-black '>Book an Appointment now</Link>
+              <h1 className='font-bold text-[1.4vw] text-white'>Book Appointment</h1>
+              <Link to='/book-appointment' className='border-b text-[0.9vw] border-white text-white'>Book an Appointment now</Link>
             </div>
 
 
