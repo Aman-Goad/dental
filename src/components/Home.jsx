@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './utils/Button'
 import { Link } from 'react-router-dom'
+import ServiceCards from './utils/ServiceCards'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
             <h1>Achieve Perfect</h1>
             <h1> Oral Health</h1>
           </div>
-          <div className='description w-2/5 text-textgray'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic! deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic
+          <div className='description z-20 w-2/5 text-textgray'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic! deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic
 
           </div>
 
@@ -136,8 +137,12 @@ const Home = () => {
 
 
     {/* Section 4 */}
+    <section className='w-full flex flex-col items-center justify-center '>
+    <ServiceCards/>
+    <Button link='/service' text='View All Services' />
+    </section>
 
-    
+
 
 
     </>

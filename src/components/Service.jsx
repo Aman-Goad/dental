@@ -1,4 +1,6 @@
 import React from "react";
+import ServiceCards from "./utils/ServiceCards";
+import ServiceBigCard from "./utils/ServiceBigCard";
 
 const Service = () => {
   return (
@@ -21,7 +23,7 @@ const Service = () => {
             </div>
 
             <div className="w-2/3  h-full flex items-center gap-4  ">
-                <img src="/images/doct.jpg" alt="" className="w-1/2 h-full rounded-lg" />
+                <img src="/images/doct.jpg" alt="" className="w-[45%] h-full rounded-lg" />
                 <img src="/images/ser.jpg" alt="" className="w-1/3 h-[50%] rounded-lg" />
             </div>
               
@@ -31,23 +33,25 @@ const Service = () => {
          
       </div>
 
+    {/* service cards */}
+    <section className="service-cards">
+
+      <ServiceCards/>
+    </section>
+
+
+    {/* service Big Card */}
+
+    <section className="service-big-card py-16">
+     <ServiceBigCard/>
+    </section>
+
+
+      
 
 
 
-      <section className="max-w-screen-lg mx-auto sm:mt-16 h-screen">
-        <div className="flex flex-col leading-tight tracking-tight text-center">
-          <h1 className="text-[3vw] font-bold">
-            Discover the Transformative Dental
-          </h1>
-          <h1 className="text-[3vw] font-bold">Solutions at Our Dentistry!</h1>
 
-          <p className="w-2/3 mx-auto text-center mt-4 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            officiis vitae dignissimos repudiandae quod necessitatibus quae.
-            Quae animi nulla rerum iste doloribus!
-          </p>
-        </div>
-      </section>
     </div>
   );
 };
