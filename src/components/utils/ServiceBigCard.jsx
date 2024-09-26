@@ -26,7 +26,7 @@ const ServiceBigCard = () => {
             <p className="text-gray-700 mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[40] transition-all duration-[1s]"></div>
+            <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[40] transition-all duration-700"></div>
 
             <div className='relative z-10 mb-4'>
               <Button link='/book-appointment' text='Learn More' color='text-bgblue' bg='bg-textwhite' />

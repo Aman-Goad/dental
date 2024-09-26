@@ -21,7 +21,8 @@ width: 100%;
   
   .cursor {
     display: inline-block;
-    width: 2px;
+    background: transparent;
+    
     animation: blink 0.8s infinite;
   }
   

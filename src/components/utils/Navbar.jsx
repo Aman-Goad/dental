@@ -65,9 +65,9 @@ const Navbar = () => {
   })
 
   return (
-    <div className='w-full shadow-lg sticky top-0 bg-white   text-black py-4 px-8  z-50 flex justify-between items-center'>
+    <div className='w-full shadow-lg  fixed top-0 bg-white   text-black py-4 px-8  z-50 flex justify-between items-center'>
       <Link to='/'>
-        <h1 className='text-2xl font-bold'>VR DENTAL</h1>
+        <h1 className='text-2xl font-bold'>DENTAL</h1>
       </Link>
 
       <div className="relative flex items-center gap-8">
@@ -97,7 +97,7 @@ const Navbar = () => {
         {/* Sliding menu */}
         <div
           className={`fixed top-0 right-0 h-screen backdrop-blur-md z-50 flex items-center justify-center transform transition-transform duration-500 ${
-            isMenuOpen ? 'translate-x-0 w-1/3' : 'translate-x-full w-1/3'
+            isMenuOpen ? 'translate-x-0 w-full' : 'translate-x-full w-full'
           }`}
         >
           <div className="text-white text-2xl p-8">
