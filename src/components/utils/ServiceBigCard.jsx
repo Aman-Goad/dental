@@ -17,7 +17,7 @@ const ServiceBigCard = () => {
   return (
     <div className="max-w-screen-lg mx-auto grid grid-cols-2 gap-8">
         {bigServices.map((service, index) => (
-          <div key={index} className={`${service.color} p-5 pb-0 rounded-lg shadow-md`}>
+          <div key={index} className={`${service.color} p-5 pb-0 rounded-lg shadow-md relative group overflow-hidden`}>
             <div className="w-full h-1/2 mb-4">
               <img src={`https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg`} alt={service.title} className="w-full h-full object-cover object-center rounded-lg" />
             </div>
@@ -26,8 +26,11 @@ const ServiceBigCard = () => {
             <p className="text-gray-700 mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[40] transition-all duration-[1s]"></div>
 
-            <Button link='/book-appointment' text='Learn More' color='text-bgblue' bg='bg-textwhite' />
+            <div className='relative z-10 mb-4'>
+              <Button link='/book-appointment' text='Learn More' color='text-bgblue' bg='bg-textwhite' />
+            </div>
 
           </div>
         ))}
