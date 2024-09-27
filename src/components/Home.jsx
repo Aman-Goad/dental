@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import ContactSection from './utils/ContactSection'
 
 const Home = () => {
 
@@ -56,26 +57,6 @@ const section4Ref = useRef(null)
     }
   };
 
-  // useGSAP(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-    
-  //   // Contact animation
-  //   gsap.from(contactRef.current, 
-    
-  //     {
-  //       y: '100%',
-  //       opacity: 0,
-  //       duration: 0.4,
-      
-  //       scrollTrigger: {
-  //         trigger: contactRef.current,
-  //         start: 'top 80%',
-  //         end: 'top 50%',
-  //       }
-  //     }
-  //   );
-
-  // }, []);
 
 
   return (
@@ -128,48 +109,7 @@ const section4Ref = useRef(null)
         <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-bgblue to-transparent'></div>
 
         {/* Contact Info BOX */}
-        <motion.div
-        initial={{ y:100, opacity:0 }}
-        whileInView={{ y:0, opacity:1 }}
-        viewport={{ once:true }}
-        transition={{ duration:1.2, ease:[0.22,1,0.36,1] }}
-        ref={contactRef}
-        className='absolute w-full bg-transparent bottom-[-15%]'>
-          <div className='h-full max-w-screen-lg mx-auto bg-textwhite rounded-lg shadow-lg flex p-3 gap-1'>
-            {/* Email */}
-            <div className="box border-r border-black w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className='bg-bgblue rounded-md inline-flex p-2'>
-                <img src="/svg/mail.svg" alt="" className='w-5 h-5 text-textwhite' />
-              </div>
-              <h1 className='font-bold text-[1.6vw]'>Email Address</h1>
-              <p className='border-b text-[0.9vw] border-black'>pdcjtrfeawo1s@outlook.com</p>
-            </div>
-            {/* Phone */}
-            <div className="box border-r border-black w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className='bg-bgblue rounded-md inline-flex p-2'>
-                <img src="/svg/call.svg" alt="" className='w-5 h-5 text-textwhite' />
-              </div>
-              <h1 className='font-bold text-[1.6vw]'>Phone Number</h1>
-              <p className='border-b text-[0.9vw] border-black'>+91 9876543210</p>
-            </div>
-            {/* Address */}
-            <div className="box w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className='bg-bgblue rounded-md inline-flex p-2'>
-                <img src="/svg/l.svg" alt="" className='w-5 h-5 text-textwhite' />
-              </div>
-              <h1 className='font-bold text-[1.6vw]'>Clinic Location</h1>
-              <p className='border-b text-[0.9vw] border-black text-wrap'> Neelam Flyover Faridabad HR </p>
-            </div>
-            {/* Book Appointment */}
-            <div className="box  bg-bgblue rounded-lg w-1/4 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className='bg-textwhite rounded-md inline-flex p-2'>
-                <img src="/svg/calender.svg" alt="" className='w-5 h-5 text-textwhite' />
-              </div>
-              <h1 className='font-bold text-[1.4vw] text-white'>Book Appointment</h1>
-              <Link to='/book-appointment' className='border-b text-[0.9vw] border-white text-white'>Book an Appointment now</Link>
-            </div>
-          </div>
-        </motion.div>
+        <ContactSection />
       </section>
 
       {/* Section 2 */}

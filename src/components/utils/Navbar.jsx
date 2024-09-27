@@ -11,7 +11,7 @@ const Navbar = () => {
     const lenis = new Lenis()
 
     lenis.on('scroll', (e) => {
-      console.log(e)
+   
     })
     
     function raf(time) {
@@ -65,7 +65,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className='w-full shadow-lg  fixed top-0 bg-white   text-black py-4 px-8  z-50 flex justify-between items-center'>
+    <div className='w-full shadow-lg  fixed top-0 bg-white   text-black py-4 px-8  z-[100] flex justify-between items-center'>
       <Link to='/'>
         <h1 className='text-2xl font-bold'>DENTAL</h1>
       </Link>
