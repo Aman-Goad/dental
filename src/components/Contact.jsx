@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdAdd } from "react-icons/io";
+import ContactSection from "./utils/ContactSection";
 
 const Contact = () => {
   return (
@@ -62,7 +63,7 @@ const Contact = () => {
                       name="message"
                       rows="4"
                       required
-                      class="mt-1 block w-full p-2 border border-gray-500 focus:outline-none focus:ring focus:ring-blue-500"
+                      class="mt-1 block w-full p-2 border border-gray-500 focus:outline-none focus:ring focus:ring-blue-500 resize-none"
                     ></textarea>
                   </div>
                   {/* button */}
@@ -87,52 +88,8 @@ const Contact = () => {
         </div>
 
         {/* contact section*/}
-        <div>
-          {/* email */}
-          <div className="flex bg-bgblue p-3 gap-1 mx-48 rounded-lg">
-            <div className="box border-r border-black  w-1/3   h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className="bg-bgblue rounded-md inline-flex p-2  ">
-                <img
-                  src="/svg/mail.svg"
-                  alt=""
-                  className="w-5 h-5 text-textwhite"
-                />
-              </div>
-              <h1 className="font-bold text-[1.6vw]">Email Address</h1>
-              <p className="border-b text-[0.9vw] border-black ">
-                manjhiakash00@gmail.com
-              </p>
-            </div>
-            {/* Phone */}
-            <div className="box border-r border-black  w-1/3 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className="bg-bgblue rounded-md inline-flex p-2  ">
-                <img
-                  src="/svg/call.svg"
-                  alt=""
-                  className="w-5 h-5 text-textwhite"
-                />
-              </div>
-              <h1 className="font-bold text-[1.6vw]">Phone Number</h1>
-              <p className="border-b text-[0.9vw] border-black ">
-                +91 9876543210
-              </p>
-            </div>
-            {/* Address */}
-            <div className="box   w-1/3 h-full p-6 flex flex-col gap-2 items-start justify-center">
-              <div className="bg-bgblue rounded-md inline-flex p-2  ">
-                <img
-                  src="/svg/l.svg"
-                  alt=""
-                  className="w-5 h-5 text-textwhite"
-                />
-              </div>
-              <h1 className="font-bold text-[1.6vw]">Clinic Location</h1>
-              <p className="border-b text-[0.9vw] border-black  text-wrap">
-                {" "}
-                Neelam Flyover Faridabad HR{" "}
-              </p>
-            </div>
-          </div>
+        <div className="relative mt-40">
+          <ContactSection/>
         </div>
       </div>
 
