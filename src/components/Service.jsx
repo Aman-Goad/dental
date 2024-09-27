@@ -5,7 +5,7 @@ import ServiceBigCard from "./utils/ServiceBigCard";
 const Service = () => {
   return (
     <div >
-      <section className="w-full py-20 bg-zinc-200 ">
+      <section className="w-full py-20 bg-zinc-100 ">
       <div className="max-w-screen-lg mx-auto  h-full  flex items-center justify-center ">
             <section className="w-full  flex items-center justify-between gap-x-8">
             <div className="w-1/3 h-full ">

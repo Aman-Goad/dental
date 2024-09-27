@@ -40,6 +40,7 @@ const App = () => {
         <Route path='/book-appointment' element={<Appointment />} />
         <Route path='*' element={<Error/>} />
       </Routes>
+      <div className='mb-[20.5vh] bg-red-500'></div>
       <Footer />
     </div>
   )

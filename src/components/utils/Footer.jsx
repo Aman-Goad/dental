@@ -9,7 +9,7 @@ import WhiteButton from './WhiteButton';
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white w-full mt-40 relative ">
+    <div className="bg-gray-900 text-white w-full mt-72 relative ">
     {/* Banner Section */}
     
     <div className='absolute left-1/2 transform -translate-x-1/2 top-[-30%] w-full max-w-screen-lg'>

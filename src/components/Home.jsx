@@ -7,6 +7,8 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ContactSection from './utils/ContactSection'
+import Work from './utils/Work'
+import Team from './utils/Team'
 
 const Home = () => {
 
@@ -156,7 +158,7 @@ const section4Ref = useRef(null)
             <img src="/images/dentist.jpg" alt="" className='h-full w-full object-cover object-top rounded-xl group-hover:scale-110 transition-all duration-[1s]' />
             <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[40] transition-all duration-[1s]"></div>
 
-            <Link to='/about' className='absolute rounded-full w-28 h-28 flex items-center justify-center text-textwhite  text-[1vw] p-4 border-2 border-white opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-[1s] cursor-pointer hover:bg-white hover:text-black hover:scale-[1.4]'>
+            <Link to='/about' className='absolute rounded-full w-28 h-28  flex items-center justify-center text-textwhite  text-[1vw] p-4 border-2 border-white opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-[1s] cursor-pointer hover:bg-white hover:text-black hover:scale-[1.4] '>
 Read More
 
             </Link>
@@ -181,6 +183,12 @@ Read More
         <ServiceCards />
         <Button link='/service' text='View All Services' />
       </section>
+
+      {/* Section 5 */}
+      <Work />
+
+      {/* Section 6 */}
+      <Team />
     </>
   );
 }
