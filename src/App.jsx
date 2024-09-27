@@ -8,13 +8,14 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Error from './components/Error'
 import Lenis from 'lenis'
+import Footer from './components/utils/Footer'
 
 const App = () => {
   useEffect(()=>{
     const lenis = new Lenis()
 
     lenis.on('scroll', (e) => {
-      console.log(e)
+     
     })
     
     function raf(time) {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path='/book-appointment' element={<Appointment />} />
         <Route path='*' element={<Error/>} />
       </Routes>
+      <Footer />
     </div>
   )
 }
