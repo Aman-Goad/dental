@@ -90,7 +90,7 @@ const Contact = () => {
         <div>
           {/* email */}
           <div className="flex bg-bgblue p-3 gap-1 mx-48 ">
-            <div className="box border-r border-black  w-1/3 h-full p-6 flex flex-col gap-2 items-start justify-center">
+            <div className="box border-r border-black  w-1/3   h-full p-6 flex flex-col gap-2 items-start justify-center">
               <div className="bg-bgblue rounded-md inline-flex p-2  ">
                 <img
                   src="/svg/mail.svg"
