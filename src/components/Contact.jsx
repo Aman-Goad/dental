@@ -76,11 +76,11 @@ const Contact = () => {
             {/* right image */}
           </div>
           <div className="w-1/2 h-full relative">
-            <div className="relative z-10 h-full w-full">
+            <div className="relative z-10 h-full w-full px-6">
               <img
                 src="/images/dentist.jpg"
-                alt=""
-                className="h-full w-full object-cover rounded-l py-10"
+                alt="dentist image"
+                className="h-full w-full object-cover rounded-l py-10 rounded"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ const Contact = () => {
         {/* contact section*/}
         <div>
           {/* email */}
-          <div className="flex bg-bgblue p-3 gap-1 mx-48 ">
+          <div className="flex bg-bgblue p-3 gap-1 mx-48 rounded-lg">
             <div className="box border-r border-black  w-1/3   h-full p-6 flex flex-col gap-2 items-start justify-center">
               <div className="bg-bgblue rounded-md inline-flex p-2  ">
                 <img
@@ -138,7 +138,7 @@ const Contact = () => {
 
       {/* faqs section */}
 
-      <section className="max-w-4xl mx-auto py-12">
+      <section className="max-w-4xl mx-auto py-14">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">FAQs</h1>
           <p className="text-gray-500 mt-4">
@@ -148,7 +148,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
             <p className="text-gray-800 font-medium">Question text goes here</p>
             <button className="text-gray-800 font-bold text-xl">+</button>
