@@ -97,7 +97,7 @@ const About = () => {
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 </p>
                 <div className="flex items-center">
-                  <img src="/images/avatar1.jpg" alt="Customer 1" className="w-12 h-12 rounded-full mr-4" />
+                  <img src="/images/dentist.jpg" alt="Customer 1" className="w-12 h-12 rounded-full mr-4 object-cover" />
                   <div>
                     <h4 className="font-semibold">John Doe</h4>
                     <p className="text-sm text-gray-500">New York, NY</p>
@@ -116,7 +116,7 @@ const About = () => {
                   "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
                 <div className="flex items-center">
-                  <img src="/images/avatar2.jpg" alt="Customer 2" className="w-12 h-12 rounded-full mr-4" />
+                  <img src="/images/dentist.jpg" alt="Customer 2" className="w-12 h-12 rounded-full mr-4 object-cover" />
                   <div>
                     <h4 className="font-semibold">Jane Smith</h4>
                     <p className="text-sm text-gray-500">Los Angeles, CA</p>
@@ -126,7 +126,7 @@ const About = () => {
             </div>
           </section>
 
-          {/* <Maps /> */}
+          <Maps />
     </div>
   )
 }

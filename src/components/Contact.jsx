@@ -106,29 +106,29 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button className="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button className="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button class="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button className="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button className="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
-          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center">
-            <p className="text-gray-800 font-medium">Question text goes here</p>
-            <button className="text-gray-800 font-bold text-xl">+</button>
+          <div className="border border-gray-300 rounded-lg p-4 flex justify-between items-center hover:bg-bgblue hover:text-white transition-colors duration-300">
+            <p className="font-medium">Question text goes here</p>
+            <button className="font-bold text-xl">+</button>
           </div>
         </div>
       </section>
