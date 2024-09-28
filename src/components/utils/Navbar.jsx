@@ -103,17 +103,29 @@ const Navbar = () => {
           }`}
         >
           <div className="text-white text-2xl p-8">
-            <Link to={`/`} className="block mb-4 text-6xl" onClick={() => setIsMenuOpen(false)}>
-              {"1."} {"Home"}
+            <Link 
+              to={`/`} 
+              className="block mb-4 text-6xl relative overflow-hidden group" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <span className="relative z-10 transition-colors duration-300 flex items-center">
+                <span className="mr-4">{"1."}</span>
+                <span className='pb-4'>{"Home"}</span>
+              </span>
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </Link>
             {["about", "service", "contact"].map((item, index) => (
               <Link
                 key={index}
                 to={`/${item}`}
-                className="block mb-4 text-6xl"
+                className="block mb-4 text-6xl relative overflow-hidden group"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {`${index + 2}.`} {item.charAt(0).toUpperCase() + item.slice(1)}
+                <span className="relative z-10 transition-colors duration-300 flex items-center">
+                  <span className="mr-4">{`${index + 2}.`}</span>
+                  <span className="pb-4">{item.charAt(0).toUpperCase() + item.slice(1)}</span>
+                </span>
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
               </Link>
             ))}
           </div>

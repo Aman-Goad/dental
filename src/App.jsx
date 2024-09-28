@@ -37,7 +37,7 @@ const App = () => {
     <div className='w-full bg-white overflow-x-hidden '>
     
       <Navbar />
-      <div className='sm:mt-[10.5vh] mt-[8.5vh]'></div>
+      <div className='sm:mt-[11.5vh] mt-[8.5vh]'></div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About/>} />

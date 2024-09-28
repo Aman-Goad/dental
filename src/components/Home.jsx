@@ -67,7 +67,7 @@ const section4Ref = useRef(null)
        
        <section
         style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero.jpg')` }}
-        className='w-full sm:h-screen h-[40vh] bg-no-repeat bg-cover bg-top relative'>
+        className='w-full sm:h-[105vh] h-[40vh] bg-no-repeat bg-cover bg-top relative'>
 
         <div className='flex flex-col h-full items-start justify-center text-textwhite sm:max-w-screen-lg mx-auto sm:gap-8 sm:p-0 p-8'>
           <div className='heading sm:text-[5vw] text-[12vw] tracking-tight leading-tight font-bold'>
