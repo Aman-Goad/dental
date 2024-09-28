@@ -70,7 +70,7 @@ const section4Ref = useRef(null)
         className='w-full sm:h-[105vh] h-[40vh] bg-no-repeat bg-cover bg-top relative'>
 
         <div className='flex flex-col h-full items-start justify-center text-textwhite sm:max-w-screen-lg mx-auto sm:gap-8 sm:p-0 p-8'>
-          <div className='heading sm:text-[5vw] text-[12vw] tracking-tight leading-tight font-bold'>
+          <div className='heading sm:text-[5vw] text-[8vw] tracking-tight leading-tight font-bold'>
             <h1 className='overflow-hidden'> 
               <motion.span
                 initial={{ y:"40%", opacity:0, rotate:10 }}
@@ -101,7 +101,7 @@ const section4Ref = useRef(null)
               </motion.h1>
             </div>
           </div>
-          <div className='description z-20 sm:w-2/5 w-full text-textgray mb-3'>
+          <div className='description z-20 sm:w-2/5 w-full text-textgray mb-3 sm:text-[1.2vw] text-[1.5vh]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic!
           </div>
 

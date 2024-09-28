@@ -2,7 +2,7 @@ import React from "react";
 import ServiceCards from "./utils/ServiceCards";
 import ServiceBigCard from "./utils/ServiceBigCard";
 import { motion } from "framer-motion";
-
+import CountUp from 'react-countup';
 const Service = () => {
   return (
     <div>
@@ -148,8 +148,13 @@ const Service = () => {
             <div className="flex flex-col sm:gap-6   text-center md:text-left">
               <div className="flex flex-col items-start sm:gap-4  p-4 sm:p-0">
                 <h3 className="text-3xl font-bold text-bgblue">
-                  {/* Placeholder for number of dentists */}
-                  130+
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  >
+                    <CountUp end={130} duration={2} start={0} useEasing={true} useGrouping={true} separator="," decimal="." prefix="" suffix="+" enableScrollSpy scrollSpyOnce={true} />
+                  </motion.span>
                 </h3>
                 <p className="text-gray-600 text-start">
                   {/* Placeholder for dentist description */}
@@ -158,8 +163,13 @@ const Service = () => {
               </div>
               <div className="flex flex-col items-start sm:gap-4 p-4 sm:p-0">
                 <h3 className="text-3xl font-bold text-bgblue">
-                  {/* Placeholder for years of experience */}
-                  25+
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  >
+                    <CountUp end={25} duration={2} start={0} useEasing={true} useGrouping={true} separator="," decimal="." prefix="" suffix="+" enableScrollSpy scrollSpyOnce={true} />
+                  </motion.span>
                 </h3>
                 <p className="text-gray-600 text-start  ">
                   {/* Placeholder for experience description */}
@@ -168,8 +178,13 @@ const Service = () => {
               </div>
               <div className="flex flex-col items-start sm:gap-4 p-4 sm:p-0">
                 <h3 className="text-3xl font-bold text-bgblue">
-                  {/* Placeholder for satisfaction rate */}
-                  100%
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  >
+                    <CountUp end={100} duration={2} start={0} useEasing={true} useGrouping={true} separator="," decimal="." prefix="" suffix="%" enableScrollSpy scrollSpyOnce={true} />
+                  </motion.span>
                 </h3>
                 <p className="text-gray-600 text-start">
                   {/* Placeholder for satisfaction description */}
@@ -178,9 +193,10 @@ const Service = () => {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

@@ -52,3 +52,9 @@ width: 100%;
 ::-webkit-scrollbar-thumb:hover {
   background: #135DE8;
 }
+
+
+::selection{
+  color: #fff;
+  background-color: #3877ec;
+}
