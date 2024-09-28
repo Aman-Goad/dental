@@ -67,40 +67,41 @@ const section4Ref = useRef(null)
        
        <section
         style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero.jpg')` }}
-        className='w-full h-screen bg-no-repeat bg-cover bg-top relative'>
-        <div className='flex flex-col h-full items-start justify-center text-textwhite max-w-screen-lg mx-auto gap-8'>
-          <div className='heading text-[5vw] tracking-tight leading-tight font-bold'>
+        className='w-full sm:h-screen h-[40vh] bg-no-repeat bg-cover bg-top relative'>
+
+        <div className='flex flex-col h-full items-start justify-center text-textwhite sm:max-w-screen-lg mx-auto sm:gap-8 sm:p-0 p-8'>
+          <div className='heading sm:text-[5vw] text-[12vw] tracking-tight leading-tight font-bold'>
             <h1 className='overflow-hidden'> 
               <motion.span
-                initial={{ y:"100%", opacity:0 }}
-                whileInView={{ rotate:0, y:0, opacity:1 }}
+                initial={{ y:"40%", opacity:0, rotate:10 }}
+                animate={{ y:0, opacity:1, rotate:0 }}
                 viewport={{ once:true }}
-                transition={{ duration:1.2, ease:[0.22,1,0.36,1] }}
-                className="inline-block"
+                transition={{ duration:1.2 }}
+                className="inline-block origin-left"
               >Achieve Perfect</motion.span>
             </h1>
-              <div className='inline-block overflow-hidden'>
-
-            <motion.h1 
-              className='overflow-hidden'
-              initial={{ y:"100%", opacity:0 }}
-              whileInView={{ y:0, opacity:1 }}
-              viewport={{ once:true }}
-              transition={{ duration:1.2, ease:[0.22,1,0.36,1], delay: 0.3 }}
+            <div className='inline-block overflow-hidden'>
+              <motion.h1 
+                className='overflow-hidden'
+               
               >
-              <motion.span 
-                className="inline-block"
-                >Oral <span className='text-bgblue'>
-                <span className="typing-animation">
-                  {currentWord}
-                  <span className="cursor">|</span>
-                </span>
-              </span>
-              </motion.span> 
-            </motion.h1>
-                </div>
+                <motion.span className="inline-block"
+                 initial={{ y:"100%", opacity:0, rotate:10 }}
+                 animate={{ y:0, opacity:1, rotate:0 }}
+                 viewport={{ once:true }}
+                 transition={{ duration:1.2 }}
+                >
+                  Oral <span className='text-bgblue'>
+                    <span className="typing-animation">
+                      {currentWord}
+                      <span className="cursor">|</span>
+                    </span>
+                  </span>
+                </motion.span> 
+              </motion.h1>
+            </div>
           </div>
-          <div className='description z-20 w-2/5 text-textgray'>
+          <div className='description z-20 sm:w-2/5 w-full text-textgray mb-3'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt eveniet corporis! Inventore ex alias unde natus cupiditate nam hic!
           </div>
 
@@ -111,15 +112,15 @@ const section4Ref = useRef(null)
         <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-bgblue to-transparent'></div>
 
         {/* Contact Info BOX */}
-        <ContactSection />
+        <ContactSection/>
       </section>
 
       {/* Section 2 */}
-      <section ref={section2Ref} className='max-w-screen-lg mx-auto h-screen flex items-center sm:mt-[14vw] pb-20'>
-        <div className='w-1/2 h-full flex flex-col justify-center leading-tight tracking-tight'>
+      <section ref={section2Ref} className='max-w-screen-lg mx-auto flex flex-col-reverse sm:flex-row items-center px-4 py-12 sm:mt-[14vw] mt-[50vh]'>
+        <div className='w-full flex flex-col justify-center  tracking-tight mb-8 sm:mb-0 mt-12 sm:mt-0 px-4 sm:px-0'>
         {/* Dynamic Heading */}
           {["Professional Dental","Care Services at","Competitive Prices!"].map((item,index)=>(
-            <h1 className='text-[3vw] font-bold overflow-hidden' key={index}>
+            <h1 className='text-[2.9vh] sm:text-[3vw] font-bold overflow-hidden' key={index}>
             <motion.span
              initial={{ y:"100%", opacity:0 }}
              whileInView={{ rotate:0, y:0, opacity:1 }}
@@ -131,36 +132,33 @@ const section4Ref = useRef(null)
           ))}
           
       
-          <p className='text-zinc-600 w-4/5 leading-normal mt-10 text-sm'>
+          <p className='text-zinc-600 w-full leading-normal mt-6 text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum autem alias dignissimos asperiores fugiat debitis rerum quasi nam quia odio eligendi
           </p>
-          <div className='points flex flex-col gap-4 mt-10 text-lg'>
+          <div className='points flex flex-col gap-4 mt-6 text-base'>
             <div className='point flex items-center gap-4'>
-              <img src="/svg/shield.svg" alt="" className='w-10 h-10' />
+              <img src="/svg/shield.svg" alt="" className='w-8 h-8' />
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className='point flex items-center gap-4'>
-              <img src="/svg/shield.svg" alt="" className='w-10 h-10' />
+              <img src="/svg/shield.svg" alt="" className='w-8 h-8' />
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className='point flex items-center gap-4'>
-              <img src="/svg/shield.svg" alt="" className='w-10 h-10' />
+              <img src="/svg/shield.svg" alt="" className='w-8 h-8' />
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </div>
         {/* Image */}
-        <div
-        
-        className='w-1/2 h-[90%] relative pt-6'>
-          <div className='absolute bg-bgblue rounded-xl bottom-[-8%] right-[-10%] w-2/3 h-2/3'></div>
-          <div className='relative z-10 h-full w-full group rounded-lg overflow-hidden flex justify-center items-center'>
+        <div className='w-full relative mt-8'>
+          <div className='absolute bg-bgblue rounded-xl bottom-[-5%] right-[-5%] w-2/3 h-2/3'></div>
+          <div className='relative z-10 w-full aspect-square group rounded-lg overflow-hidden flex justify-center items-center'>
             <img src="/images/dentist.jpg" alt="" className='h-full w-full object-cover object-top rounded-xl group-hover:scale-110 transition-all duration-[1s]' />
             <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[40] transition-all duration-[1s]"></div>
 
-            <Link to='/about' className='absolute rounded-full w-28 h-28  flex items-center justify-center text-textwhite  text-[1vw] p-4 border-2 border-white opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-[1s] cursor-pointer hover:bg-white hover:text-black hover:scale-[1.4] '>
-Read More
-
+            <Link to='/about' className='absolute rounded-full w-20 h-20 flex items-center justify-center text-textwhite text-sm p-4 border-2 border-white opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-[1s] cursor-pointer hover:bg-white hover:text-black hover:scale-[1.4]'>
+              Read More
             </Link>
           </div>
         </div>
@@ -168,12 +166,12 @@ Read More
 
       {/* Section 3 */}
       <section ref={section3Ref} className='w-full bg-bgblue mt-8'>
-        <div className='max-w-screen-lg mx-auto flex justify-between items-center gap-20 py-8'>
-          <h1 className='w-1/3 text-textwhite font-bold text-[1.6vw] text-wrap'>Trusted By Hundreds Of Medical Organizations</h1>
-          <div className='flex gap-9 w-2/3'>
-            <img src="/svg/logo1.svg" alt="" className='h-[3vw]' />
-            <img src="/svg/logo2.svg" alt="" className='h-[3vw]' />
-            <img src="/svg/logo1.svg" alt="" className='h-[3vw]' />
+        <div className='max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between items-center sm:gap-20 gap-4 py-8'>
+          <h1 className='w-full text-center sm:text-left sm:w-1/3 text-textwhite font-bold sm:text-[1.6vw] text-[3vh] text-wrap'>Trusted By Hundreds Of Medical Organizations</h1>
+          <div className='flex gap-9 w-full sm:w-2/3 justify-center sm:justify-end'>
+            <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
+            <img src="/svg/logo2.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
+            <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
           </div>
         </div>
       </section>

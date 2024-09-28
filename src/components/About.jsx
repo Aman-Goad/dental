@@ -6,24 +6,24 @@ import Work from './utils/Work';
 const About = () => {
   return (
     <div className='w-full'>
-     <div className='w-full h-screen bg-zinc-100 '>
-      <div className=' mx-auto h-full flex items-center justify-center'>
-     <section className="w-full h-full  flex items-center justify-between  gap-x-12">
-            <div className="w-1/2 h-full pl-64 flex flex-col justify-center">
-            <h3 className="text-[2vw] font-bold text-bgblue">About</h3>
+     <div className='w-full sm:h-screen bg-zinc-100 '>
+      <div className=' mx-auto sm:h-full flex items-center justify-center'>
+     <section className="w-full h-full  flex items-center sm:justify-between justify-start sm:gap-x-12 gap-x-0 flex-col-reverse sm:flex-row">
+            <div className="sm:w-1/2 sm:h-full sm:pl-64 sm:flex flex-col justify-center p-4 sm:p-0 ">
+            <h3 className="sm:text-[2vw] text-[2vh]  font-bold text-bgblue">About</h3>
             
-            <div className="flex flex-col leading-none tracking-tight">
-            <h1 className="text-[4vw] font-bold">Experienced</h1>
-            <h1 className="text-[4vw] font-bold">Dentist in</h1>
-            <h1 className="text-[4vw] font-bold">Maryland City</h1>
+            <div className="flex flex-col sm:leading-none leading-[1.2] sm:tracking-tight">
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Experienced</h1>
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Dentist in</h1>
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Maryland City</h1>
             </div>
 
-            <p className="text-[1.2vw] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            <p className="sm:text-[1.2vw] text-[1.8vh] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
             officiis vitae dignissimos repudiandae quod necessitatibus quae.
             Quae animi nulla rerum iste doloribus!</p>
             </div>
 
-            <div className="w-1/2  h-full bg-red-500   ">
+            <div className="sm:w-1/2  sm:h-full    ">
             <img src="/images/bed.jpg" alt="" className='w-full h-full object-cover' />
             
             </div>
@@ -33,48 +33,48 @@ const About = () => {
      </div>
 
 
-     <section className='max-w-screen-lg mt-16 mx-auto h-[90vh] flex items-center    overflow-hidden'>
-      <div className='w-1/2 h-full   py-10 '>
+     <section className='max-w-screen-lg sm:mt-16 mx-auto h-[90vh] flex items-center    overflow-hidden sm:p-0 p-4  flex-col sm:flex-row'>
+      <div className='sm:w-1/2 sm:h-full w-full   py-10  '>
       <div className='leading-[1.1] tracking-tight'>
-      <h1 className='text-[2.6vw] font-bold '>Trust Our Proficient </h1>
-      <h1 className='text-[2.6vw] font-bold'>Dentists for Quality and </h1>
-      <h1 className='text-[2.6vw] font-bold'>Comfort</h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold '>Trust Our Proficient </h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold'>Dentists for Quality and </h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold'>Comfort</h1>
       </div>
-      <p className='text-[1.1vw] mt-6 text-zinc-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+      <p className='sm:text-[1.1vw] text-[1.8vh] mt-6 text-zinc-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
       officiis vitae dignissimos repudiandae quod necessitatibus quae.
       Quae animi nulla rerum iste doloribus!</p>
 
-      <div className=' w-full h-1/2 mt-12 flex'>
+      <div className=' w-full h-1/2 mt-12 flex  gap-3'>
           <div className="content w-2/3 h-full  ">
               <div className='w-full   flex items-center justify-start'>
               <div className='flex items-center justify-center bg-blue-100 rounded-md p-2'>
-              <FaTooth className='text-[1vw] text-bgblue' />
+              <FaTooth className='sm:text-[1vw] text-[1.8vh] text-bgblue' />
               </div>
               </div>
               <div className='w-full mt-4 '>
-              <h1 className='text-[1.5vw] font-bold'>Lorem, ipsum.</h1>
-                <p className='text-[1vw] mt-2 text-zinc-700 leading-[1.2]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos error, ipsa quas rem </p>
+              <h1 className='sm:text-[1.5vw] text-[2vh] font-bold'>Lorem, ipsum.</h1>
+                <p className='sm:text-[1vw] text-[1.6vh] mt-2 text-zinc-700 leading-[1.2]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos error, ipsa quas rem </p>
 
-              <Link to="/#" className='text-[1.1vw] mt-6 text-blue-600 flex items-center gap-x-2'>Learn More <FaArrowRight /></Link>
+              <Link to="/#" className='sm:text-[1.1vw] text-[1.6vh] mt-6 text-blue-600 flex items-center gap-x-2'>Learn More <FaArrowRight /></Link>
               </div>
           </div>
           
           <div className="content w-2/3 h-full  ">
-              <div className='w-full   flex items-center justify-start'>
+              <div className='w-full   flex items-center justify-start '>
               <div className='flex items-center justify-center bg-blue-100 rounded-md p-2'>
-              <FaTooth className='text-[1vw] text-bgblue' />
+              <FaTooth className='sm:text-[1vw] text-[1.8vh] text-bgblue' />
               </div>
               </div>
               <div className='w-full mt-4 '>
-              <h1 className='text-[1.5vw] font-bold'>Lorem, ipsum.</h1>
-                <p className='text-[1vw] mt-2 text-zinc-700 leading-[1.2]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos error, ipsa quas rem minima </p>
+              <h1 className='sm:text-[1.5vw] text-[2vh] font-bold'>Lorem, ipsum.</h1>
+                <p className='sm:text-[1vw] text-[1.6vh] mt-2 text-zinc-700 leading-[1.2]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos error, ipsa quas rem minima </p>
 
-              <Link to="/#" className='text-[1.1vw] mt-6 text-blue-600 flex items-center gap-x-2'>Learn More <FaArrowRight /></Link>
+              <Link to="/#" className='sm:text-[1.1vw] text-[1.6vh] mt-6 text-blue-600 flex items-center gap-x-2'>Learn More <FaArrowRight /></Link>
               </div>
           </div>
       </div>
       </div>
-      <div className='w-1/2 h-full  p-8'>
+      <div className='sm:w-1/2 h-full  sm:p-8'>
       <img src="/images/bed.jpg" alt="" className='w-full h-full object-cover  rounded-md  ' />
       </div>
      </section>

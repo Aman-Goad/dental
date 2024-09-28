@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from './components/utils/Navbar'
 import Home from './components/Home'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Appointment from './components/Appointment'
 import Service from './components/Service'
 import Contact from './components/Contact'
@@ -11,7 +11,13 @@ import Lenis from 'lenis'
 import Footer from './components/utils/Footer'
 
 const App = () => {
-  useEffect(()=>{
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  useEffect(() => {
     const lenis = new Lenis()
 
     lenis.on('scroll', (e) => {
@@ -25,13 +31,13 @@ const App = () => {
     
     requestAnimationFrame(raf)
 
-  })
+  }, [])
 
   return (
     <div className='w-full bg-white overflow-x-hidden '>
     
       <Navbar />
-      <div className='mt-[10.5vh]'></div>
+      <div className='sm:mt-[10.5vh] mt-[8.5vh]'></div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About/>} />

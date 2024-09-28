@@ -65,16 +65,18 @@ const Navbar = () => {
   })
 
   return (
-    <div className='w-full shadow-lg  fixed top-0 bg-white   text-black py-4 px-8  z-[100] flex justify-between items-center'>
+    <div className='w-full sm:shadow-lg shadow-2xl fixed top-0 bg-white   text-black py-4 px-8  z-[100] flex justify-between items-center '>
       <Link to='/'>
         <h1 className='text-2xl font-bold'>DENTAL</h1>
       </Link>
 
-      <div className="relative flex items-center gap-8">
+      <div className="relative flex items-center gap-8  ">
+        <div className='hidden sm:block'>
       <Button
         link="/book-appointment"
         text="Book Appointment"
-      />
+        />
+      </div>
       <div
         className="text-bgblue h-12 w-12 flex items-center justify-center focus:outline-none hover:text-white hover:bg-bgblue rounded-full duration-300 cursor-pointer"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
