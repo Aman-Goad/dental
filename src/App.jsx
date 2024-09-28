@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Error from './components/Error'
 import Lenis from 'lenis'
+import JoinUs from './components/utils/JoinUs'
 import Footer from './components/utils/Footer'
 
 const App = () => {
@@ -44,6 +45,8 @@ const App = () => {
         <Route path='/service' element={<Service/>} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/book-appointment' element={<Appointment />} />
+        <Route path='/join-us' element={<JoinUs />} />
+
         <Route path='*' element={<Error/>} />
       </Routes>
       <div className='mb-[20.5vh] bg-red-500'></div>
