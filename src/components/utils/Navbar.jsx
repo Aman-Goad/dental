@@ -73,8 +73,8 @@ const Navbar = () => {
       <div className="relative flex items-center gap-8  ">
         <div className='hidden sm:block'>
       <Button
-        link="/book-appointment"
-        text="Book Appointment"
+        link="/careers"
+        text="Join Us"
         />
       </div>
       <div
@@ -114,7 +114,7 @@ const Navbar = () => {
               </span>
               <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </Link>
-            {["about", "service", "contact"].map((item, index) => (
+            {["about", "service", "contact","careers"].map((item, index) => (
               <Link
                 key={index}
                 to={`/${item}`}
