@@ -3,6 +3,7 @@ import Maps from './utils/Maps'
 import { FaArrowRight, FaStar, FaTooth } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import Work from './utils/Work';
+import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div className='w-full'>
@@ -13,9 +14,44 @@ const About = () => {
             <h3 className="sm:text-[2vw] text-[2vh]  font-bold text-bgblue">About</h3>
             
             <div className="flex flex-col sm:leading-none leading-[1.2] sm:tracking-tight">
-            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Experienced</h1>
-            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Dentist in</h1>
-            <h1 className="sm:text-[4vw] text-[4vh] font-bold">Maryland City</h1>
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold overflow-hidden">
+              
+              <motion.span
+              initial={{ y:"40%", opacity:0, rotate:10 }}
+              animate={{ y:0, opacity:1, rotate:0 }}
+              viewport={{ once:true }}
+              transition={{ duration:1.2 }}
+              className="inline-block origin-left"
+              >
+              Experienced
+              </motion.span>
+              
+              </h1>
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold overflow-hidden">
+             
+              <motion.span
+              initial={{ y:"40%", opacity:0, rotate:10 }}
+              animate={{ y:0, opacity:1, rotate:0 }}
+              viewport={{ once:true }}
+              transition={{ duration:1.2 }}
+              className="inline-block origin-left"
+              >
+              Dentist in
+              </motion.span>
+              </h1>
+            <h1 className="sm:text-[4vw] text-[4vh] font-bold overflow-hidden">
+              
+              <motion.span
+              initial={{ y:"40%", opacity:0, rotate:10 }}
+              animate={{ y:0, opacity:1, rotate:0 }}
+              viewport={{ once:true }}
+              transition={{ duration:1.2 }}
+              className="inline-block origin-left"
+              >
+              Maryland City
+              </motion.span>
+              
+              </h1>
             </div>
 
             <p className="sm:text-[1.2vw] text-[1.8vh] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -36,9 +72,39 @@ const About = () => {
      <section className='max-w-screen-lg sm:mt-16 mx-auto h-[90vh] flex items-center    overflow-hidden sm:p-0 p-4  flex-col sm:flex-row'>
       <div className='sm:w-1/2 sm:h-full w-full   py-10  '>
       <div className='leading-[1.1] tracking-tight'>
-      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold '>Trust Our Proficient </h1>
-      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold'>Dentists for Quality and </h1>
-      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold'>Comfort</h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold overflow-hidden '>
+        <motion.span
+        initial={{ y:"40%", opacity:0, rotate:10 }}
+        animate={{ y:0, opacity:1, rotate:0 }}
+        viewport={{ once:true }}
+        transition={{ duration:1.2 }}
+        className="inline-block origin-left"
+        >
+        Trust Our Proficient
+        </motion.span>
+         </h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold overflow-hidden'>
+        <motion.span
+        initial={{ y:"40%", opacity:0, rotate:10 }}
+        animate={{ y:0, opacity:1, rotate:0 }}
+        viewport={{ once:true }}
+        transition={{ duration:1.2 }}
+        className="inline-block origin-left"
+        > 
+        Dentists for Quality and 
+        </motion.span>
+        </h1>
+      <h1 className='sm:text-[2.6vw] text-[4vh] font-bold overflow-hidden'>
+        <motion.span
+        initial={{ y:"40%", opacity:0, rotate:10 }}
+        animate={{ y:0, opacity:1, rotate:0 }}
+        viewport={{ once:true }}
+        transition={{ duration:1.2 }}
+        className="inline-block origin-left"
+        > 
+        Comfort
+        </motion.span>
+        </h1>
       </div>
       <p className='sm:text-[1.1vw] text-[1.8vh] mt-6 text-zinc-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
       officiis vitae dignissimos repudiandae quod necessitatibus quae.
