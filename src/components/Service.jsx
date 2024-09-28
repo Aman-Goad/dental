@@ -54,6 +54,7 @@ const Service = () => {
               </div>
 
               <p className="text-[3vw] sm:text-[1.2vw] mt-4">
+                {/* Placeholder for service description */}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                 officiis vitae dignissimos repudiandae quod necessitatibus quae.
                 Quae animi nulla rerum iste doloribus!
@@ -64,7 +65,7 @@ const Service = () => {
               <div className="w-full sm:w-[45%] h-64 sm:h-full rounded-lg relative overflow-hidden group">
                 <img
                   src="/images/doctor.jpg"
-                  alt=""
+                  alt="Doctor"
                   className="w-full h-full object-cover  object-center rounded-lg"
                   loading="lazy"
                 />
@@ -74,7 +75,7 @@ const Service = () => {
               <div className="w-full sm:w-1/3 h-64 sm:h-[50%] rounded-lg relative overflow-hidden group mt-4 sm:mt-0">
                 <img
                   src="/images/ser.jpg"
-                  alt=""
+                  alt="Service"
                   className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                 />
@@ -122,10 +123,12 @@ const Service = () => {
               viewport={{once: true}}
               >
 
-ZipDentist
+              {/* Placeholder for clinic name */}
+              ZipDentist
               </motion.span>
             </h2>
             <p className="mt-4 text-gray-600">
+              {/* Placeholder for why choose us description */}
               Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
               mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
               fringilla, mattis ligula consectetur, ultrices.
@@ -144,20 +147,32 @@ ZipDentist
           <div className="md:w-1/2 flex flex-col items-center">
             <div className="flex flex-col sm:gap-6   text-center md:text-left">
               <div className="flex flex-col items-start sm:gap-4  p-4 sm:p-0">
-                <h3 className="text-3xl font-bold text-bgblue">130+</h3>
+                <h3 className="text-3xl font-bold text-bgblue">
+                  {/* Placeholder for number of dentists */}
+                  130+
+                </h3>
                 <p className="text-gray-600 text-start">
+                  {/* Placeholder for dentist description */}
                   Experienced dentists in our network, ensuring you receive top-quality care.
                 </p>
               </div>
               <div className="flex flex-col items-start sm:gap-4 p-4 sm:p-0">
-                <h3 className="text-3xl font-bold text-bgblue">25+</h3>
+                <h3 className="text-3xl font-bold text-bgblue">
+                  {/* Placeholder for years of experience */}
+                  25+
+                </h3>
                 <p className="text-gray-600 text-start  ">
+                  {/* Placeholder for experience description */}
                   Years of combined experience, providing trusted dental services to our community.
                 </p>
               </div>
               <div className="flex flex-col items-start sm:gap-4 p-4 sm:p-0">
-                <h3 className="text-3xl font-bold text-bgblue">100%</h3>
+                <h3 className="text-3xl font-bold text-bgblue">
+                  {/* Placeholder for satisfaction rate */}
+                  100%
+                </h3>
                 <p className="text-gray-600 text-start">
+                  {/* Placeholder for satisfaction description */}
                   Patient satisfaction rate, reflecting our commitment to exceptional dental care.
                 </p>
               </div>

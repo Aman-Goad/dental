@@ -25,7 +25,7 @@ const Footer = () => {
     </div>
 
     {/* Footer Section */}
-    <footer className="bg-gray-900 py-8 px-4 pt-48">
+    <footer className="bg-gray-900 py-8 px-4 sm:pt-48 pt-20">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between gap-8 ">
         {/* Address Section */}
         <div className="md:w-1/3 ">
@@ -64,7 +64,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm border-t border-gray-700 pt-6 max-w-screen-lg mx-auto pb-6">
         <p>© 2023 ZipWP. All rights reserved.</p>
-        <div className="flex gap-4 mt-4 md:mt-0 text-[1.2vw] ">
+        <div className="flex gap-4 mt-4 md:mt-0 sm:text-[1.2vw] text-[2vh] ">
           <Link to="#" target='_blank'><FaFacebook/></Link>
           <Link to="#" target='_blank'><AiFillInstagram/></Link>
           <Link to="#" target='_blank'><FaXTwitter /></Link>
