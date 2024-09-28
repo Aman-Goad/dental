@@ -9,14 +9,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ContactSection from './utils/ContactSection'
 import Work from './utils/Work'
 import Team from './utils/Team'
+import Marquee from 'react-fast-marquee'
 
 const Home = () => {
 
-const contactRef = useRef(null)
-const section2Ref = useRef(null)
-const section3Ref = useRef(null)
-const section4Ref = useRef(null)
-  
+  const contactRef = useRef(null)
+  const section2Ref = useRef(null)
+  const section3Ref = useRef(null)
+  const section4Ref = useRef(null)
+
 
 
   const words = [
@@ -63,33 +64,33 @@ const section4Ref = useRef(null)
 
   return (
     <>
-       {/* Section 1 */}
-       
-       <section
+      {/* Section 1 */}
+
+      <section
         style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero.jpg')` }}
         className='w-full sm:h-[105vh] h-[40vh] bg-no-repeat bg-cover bg-top relative'>
 
         <div className='flex flex-col h-full items-start justify-center text-textwhite sm:max-w-screen-lg mx-auto sm:gap-8 sm:p-0 p-8'>
           <div className='heading sm:text-[5vw] text-[8vw] tracking-tight leading-tight font-bold'>
-            <h1 className='overflow-hidden'> 
+            <h1 className='overflow-hidden'>
               <motion.span
-                initial={{ y:"40%", opacity:0, rotate:10 }}
-                animate={{ y:0, opacity:1, rotate:0 }}
-                viewport={{ once:true }}
-                transition={{ duration:1.2 }}
+                initial={{ y: "40%", opacity: 0, rotate: 10 }}
+                animate={{ y: 0, opacity: 1, rotate: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2 }}
                 className="inline-block origin-left"
               >Achieve Perfect</motion.span>
             </h1>
             <div className='inline-block overflow-hidden'>
-              <motion.h1 
+              <motion.h1
                 className='overflow-hidden'
-               
+
               >
                 <motion.span className="inline-block"
-                 initial={{ y:"100%", opacity:0, rotate:10 }}
-                 animate={{ y:0, opacity:1, rotate:0 }}
-                 viewport={{ once:true }}
-                 transition={{ duration:1.2 }}
+                  initial={{ y: "100%", opacity: 0, rotate: 10 }}
+                  animate={{ y: 0, opacity: 1, rotate: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.2 }}
                 >
                   Oral <span className='text-bgblue'>
                     <span className="typing-animation">
@@ -97,7 +98,7 @@ const section4Ref = useRef(null)
                       <span className="cursor">|</span>
                     </span>
                   </span>
-                </motion.span> 
+                </motion.span>
               </motion.h1>
             </div>
           </div>
@@ -112,26 +113,26 @@ const section4Ref = useRef(null)
         <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-bgblue to-transparent'></div>
 
         {/* Contact Info BOX */}
-        <ContactSection/>
+        <ContactSection />
       </section>
 
       {/* Section 2 */}
       <section ref={section2Ref} className='max-w-screen-lg mx-auto flex flex-col-reverse sm:flex-row items-center px-4 py-12 sm:mt-[14vw] mt-[50vh]'>
         <div className='w-full flex flex-col justify-center  tracking-tight mb-8 sm:mb-0 mt-12 sm:mt-0 px-4 sm:px-0'>
-        {/* Dynamic Heading */}
-          {["Professional Dental","Care Services at","Competitive Prices!"].map((item,index)=>(
+          {/* Dynamic Heading */}
+          {["Professional Dental", "Care Services at", "Competitive Prices!"].map((item, index) => (
             <h1 className='text-[2.9vh] sm:text-[3vw] font-bold overflow-hidden' key={index}>
-            <motion.span
-             initial={{ y:"100%", opacity:0 }}
-             whileInView={{ rotate:0, y:0, opacity:1 }}
-             viewport={{ once:true }}
-             transition={{ duration:1.2, ease:[0.22,1,0.36,1] }}
-             className="inline-block"
-            >{item}</motion.span> 
+              <motion.span
+                initial={{ y: "100%", opacity: 0 }}
+                whileInView={{ rotate: 0, y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                className="inline-block"
+              >{item}</motion.span>
             </h1>
           ))}
-          
-      
+
+
           <p className='text-zinc-600 w-full leading-normal mt-6 text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum autem alias dignissimos asperiores fugiat debitis rerum quasi nam quia odio eligendi
           </p>
@@ -169,9 +170,15 @@ const section4Ref = useRef(null)
         <div className='max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between items-center sm:gap-20 gap-4 py-8'>
           <h1 className='w-full text-center sm:text-left sm:w-1/3 text-textwhite font-bold sm:text-[1.6vw] text-[3vh] text-wrap'>Trusted By Hundreds Of Medical Organizations</h1>
           <div className='flex gap-9 w-full sm:w-2/3 justify-center sm:justify-end'>
-            <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
-            <img src="/svg/logo2.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
-            <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw]' />
+            <Marquee speed={100}
+            // pauseOnHover={true}
+            className='w-full'>
+              <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw] mx-8' />
+              <img src="/svg/logo2.svg" alt="" className='h-[3vh] sm:h-[3vw] mx-8' />
+              <img src="/svg/logo1.svg" alt="" className='h-[3vh] sm:h-[3vw] mx-8' />
+              <img src="/svg/logo2.svg" alt="" className='h-[3vh] sm:h-[3vw] mx-8' />
+            </Marquee>
+
           </div>
         </div>
       </section>
