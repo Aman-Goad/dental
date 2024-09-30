@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import Button from './Button';
+import WhiteButton from './WhiteButton';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(()=>{
@@ -98,19 +99,53 @@ const Navbar = () => {
 
         {/* Sliding menu */}
         <div
-          className={`fixed top-0 right-0 h-screen backdrop-blur-md z-50 flex items-center justify-center transform transition-transform duration-500 ${
+          className={`fixed top-0 right-0 h-screen sm:bg-bgblue  backdrop-blur-md z-50 flex sm:items-start items-center sm:justify-between justify-center gap-8 transform transition-transform duration-500 ${
             isMenuOpen ? 'translate-x-0 w-full' : 'translate-x-full w-full'
           }`}
         >
-          <div className="text-white text-2xl p-8">
+          {/* Image Section */}
+          <div className='imgae h-full w-full sm:block hidden   '>
+          <div className='h-2/3 relative rounded-lg overflow-hidden group    ' >
+              <img src="/images/off.jpg" alt=""  className='h-full w-full object-cover rounded-lg  flex items-center justify-center '/>
+
+              <div className='absolute bottom-0 left-0 w-full h-1/2 opacity-90 bg-gradient-to-t from-bgblue to-transparent'></div>
+
+              <div className="absolute top-0 right-0 w-10 h-10 bg-black opacity-0 rounded-full scale-0 group-hover:opacity-30 group-hover:scale-[70] transition-all duration-[1s]"></div>   
+
+              <Link to={`/`} onClick={() => setIsMenuOpen(false)} className='text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 rounded-full h-24 w-24 sm:h-36 sm:w-36 p-4 text-base sm:text-[1.3vw] tracking-tight leading-none text-center flex items-center justify-center z-50 opacity-0 group-hover:opacity-100 transition-all duration-[1s] hover:bg-white hover:text-black'>
+                  Dental
+                </Link>
+             
+          </div>
+              
+
+
+
+
+
+              <div className='w-full'>
+      <div className=" text-white py-16 px-4 text-center rounded-lg">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 ">
+          Don't Let Dental Problems Wait! <br /> Take Action Now
+        </h2>
+            <Link to='/book-appointment' onClick={() => setIsMenuOpen(false)}  className=' bg-white text-bgblue border-2 border-bgblue hover:bg-bgblue hover:text-white px-4 py-2 rounded-lg duration-300'>
+              Book Appointment
+            </Link>
+      </div> 
+    </div>
+             
+              
+          </div>
+          {/* Navbar Section */}
+          <div className="text-white sm:text-[4.5vw] text-[6vh] font-semibold sm:mr-32   p-8">
             <Link 
               to={`/`} 
-              className="block mb-4 text-6xl relative overflow-hidden group" 
+              className="block mb-1  relative overflow-hidden group" 
               onClick={() => setIsMenuOpen(false)}
             >
               <span className="relative z-10 transition-colors duration-300 flex items-center">
-                <span className="mr-4">{"1."}</span>
-                <span className='pb-4'>{"Home"}</span>
+                
+                <span className='pb-4 sm:ml-2'>{"Home"}</span>
               </span>
               <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </Link>
@@ -118,12 +153,12 @@ const Navbar = () => {
               <Link
                 key={index}
                 to={`/${item}`}
-                className="block mb-4 text-6xl relative overflow-hidden group"
+                className="block mb-1 relative overflow-hidden group"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10 transition-colors duration-300 flex items-center">
-                  <span className="mr-4">{`${index + 2}.`}</span>
-                  <span className="pb-4">{item.charAt(0).toUpperCase() + item.slice(1)}</span>
+                 
+                  <span className="pb-4 sm:ml-2">{item.charAt(0).toUpperCase() + item.slice(1)}</span>
                 </span>
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
               </Link>
