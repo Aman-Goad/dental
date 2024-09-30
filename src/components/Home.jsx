@@ -113,11 +113,12 @@ const Home = () => {
         <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-bgblue to-transparent'></div>
 
         {/* Contact Info BOX */}
-        <ContactSection />
       </section>
+        <ContactSection />
 
       {/* Section 2 */}
-      <section ref={section2Ref} className='max-w-screen-lg mx-auto flex flex-col-reverse sm:flex-row items-center px-4 py-12 sm:mt-[14vw] mt-[50vh]'>
+   
+      <section  className='max-w-screen-lg mx-auto flex flex-col-reverse sm:flex-row items-center px-4 py-12 sm:py-[14vw] '>
         <div className='w-full flex flex-col justify-center  tracking-tight mb-8 sm:mb-0 mt-12 sm:mt-0 px-4 sm:px-0'>
           {/* Dynamic Heading */}
           {["Professional Dental", "Care Services at", "Competitive Prices!"].map((item, index) => (
@@ -164,6 +165,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+   
 
       {/* Section 3 */}
       <section ref={section3Ref} className='w-full bg-bgblue mt-8'>
