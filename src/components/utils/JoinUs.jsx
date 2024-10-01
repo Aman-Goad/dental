@@ -11,7 +11,7 @@ const JoinUs = () => {
 
     const formData = new FormData(e.target);
     console.log(e.target) 
-    formData.append('access_key', '379d7b37-1aed-444c-affe-09ed08831892'); 
+    formData.append('access_key', '8ab15586-4f7c-4903-9608-98ec569db172'); 
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
