@@ -10,6 +10,7 @@ import Error from './components/Error'
 import Lenis from 'lenis'
 import JoinUs from './components/utils/JoinUs'
 import Footer from './components/utils/Footer'
+import ContactForm from './components/ContactForm'
 
 const App = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const App = () => {
         <Route path='/about' element={<About/>} />
         <Route path='/service' element={<Service/>} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/contactform' element={<ContactForm/>} />
         <Route path='/book-appointment' element={<Appointment />} />
         <Route path='/careers' element={<JoinUs />} />
 
